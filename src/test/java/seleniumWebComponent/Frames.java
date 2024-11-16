@@ -29,8 +29,8 @@ public class Frames {
 		driver.findElement(By.xpath("//a[@data-date='22']")).click();
 		//Thread.sleep(5000);
 		System.out.println("The Selected Date is :" + date.getAttribute("value"));
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 
 	}
 
@@ -38,6 +38,7 @@ public class Frames {
 		Frames frames = new Frames();
 		frames.launch();
 		frames.dataPicker();
+		
 	}
 
 }
